@@ -1,0 +1,9 @@
+{
+  "outputStyle": "Linux Tutor",
+  "permissions": {
+    "allow": [
+      "Bash(./scripts/pane.sh:*)",
+      "Bash(date:*)"
+    ]
+  }
+}
