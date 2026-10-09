@@ -1,0 +1,1026 @@
+{
+ "track": "interview",
+ "source": "progress/misses.md",
+ "items": [
+  {
+   "id": "interview/CLD-1",
+   "concept": "cld",
+   "kind": "miss",
+   "title": "AWS VPC: what makes a subnet public",
+   "level": "foundation",
+   "miss_type": "confident miss",
+   "picked_before": "Its network ACL allows all inbound traffic",
+   "covered_on": "month 2",
+   "priority": 3,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/CLD-2",
+   "concept": "cld",
+   "kind": "miss",
+   "title": "NAT Gateways",
+   "level": "foundation",
+   "miss_type": "confident miss",
+   "picked_before": "An Internet Gateway attached directly to the private subnet's route table",
+   "covered_on": "month 2",
+   "priority": 3,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/CLD-4",
+   "concept": "cld",
+   "kind": "miss",
+   "title": "IAM roles for compute",
+   "level": "foundation",
+   "miss_type": "confident miss",
+   "picked_before": "A bucket policy that allows requests from the instance's public IP",
+   "covered_on": "month 2",
+   "priority": 3,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/CLD-5",
+   "concept": "cld",
+   "kind": "miss",
+   "title": "IAM evaluation and SCPs",
+   "level": "working",
+   "miss_type": "confident miss",
+   "picked_before": "Yes, but only if the bucket policy also allows the delete",
+   "covered_on": "month 2",
+   "priority": 3,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/CODE-2",
+   "concept": "code",
+   "kind": "miss",
+   "title": "Bash word splitting",
+   "level": "working",
+   "miss_type": "confident miss",
+   "picked_before": "Bash can't loop over command output without a `while read` loop",
+   "covered_on": "warm-ups",
+   "priority": 3,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/CODE-7",
+   "concept": "code",
+   "kind": "miss",
+   "title": "jq with kubectl output",
+   "level": "working",
+   "miss_type": "confident miss",
+   "picked_before": "`.items / map(.status.phase != \"Running\") / .metadata.name`",
+   "covered_on": "warm-ups",
+   "priority": 3,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/CODE-8",
+   "concept": "code",
+   "kind": "miss",
+   "title": "Goroutine leaks and context cancellation",
+   "level": "senior",
+   "miss_type": "confident miss",
+   "picked_before": "The HTTP server caches every response body in memory by default",
+   "covered_on": "course 3",
+   "priority": 3,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/CTR-6",
+   "concept": "ctr",
+   "kind": "miss",
+   "title": "User namespaces and rootless containers",
+   "level": "working",
+   "miss_type": "confident miss",
+   "picked_before": "Nothing; UID 0 doesn't exist inside the container",
+   "covered_on": "26",
+   "priority": 3,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/DS-5",
+   "concept": "ds",
+   "kind": "miss",
+   "title": "Cache stampedes",
+   "level": "senior",
+   "miss_type": "confident miss",
+   "picked_before": "More database read replicas to absorb the spike",
+   "covered_on": "course 3",
+   "priority": 3,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/DS-7",
+   "concept": "ds",
+   "kind": "miss",
+   "title": "Capacity planning math",
+   "level": "senior",
+   "miss_type": "confident miss",
+   "picked_before": "6",
+   "covered_on": "course 3",
+   "priority": 3,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/DTL-6",
+   "concept": "dtl",
+   "kind": "miss",
+   "title": "Rotating a root CA safely",
+   "level": "senior",
+   "miss_type": "confident miss",
+   "picked_before": "Reissue all leaf certs from the new root, then update the trust stores",
+   "covered_on": "19",
+   "priority": 3,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/IAC-5",
+   "concept": "iac",
+   "kind": "miss",
+   "title": "State structure and blast radius",
+   "level": "working",
+   "miss_type": "confident miss",
+   "picked_before": "Modules can't be reused once everything sits in a single root module",
+   "covered_on": "month 2",
+   "priority": 3,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/KC-3",
+   "concept": "kc",
+   "kind": "miss",
+   "title": "RBAC: ClusterRole bound by a RoleBinding",
+   "level": "working",
+   "miss_type": "confident miss",
+   "picked_before": "Nothing; a ClusterRole needs a ClusterRoleBinding",
+   "covered_on": "15",
+   "priority": 3,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/KC-8",
+   "concept": "kc",
+   "kind": "miss",
+   "title": "PodDisruptionBudgets and drains",
+   "level": "working",
+   "miss_type": "confident miss",
+   "picked_before": "The pod is evicted and rescheduled; PDBs only cover crashes",
+   "covered_on": "25",
+   "priority": 3,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/KN-1",
+   "concept": "kn",
+   "kind": "miss",
+   "title": "Service selectors and endpoints",
+   "level": "foundation",
+   "miss_type": "confident miss",
+   "picked_before": "targetPort doesn't match the port the container listens on",
+   "covered_on": "20",
+   "priority": 3,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/KN-3",
+   "concept": "kn",
+   "kind": "miss",
+   "title": "NetworkPolicy semantics",
+   "level": "working",
+   "miss_type": "confident miss",
+   "picked_before": "Nothing is blocked until you also add a default-deny policy",
+   "covered_on": "16",
+   "priority": 3,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/KN-5",
+   "concept": "kn",
+   "kind": "miss",
+   "title": "Headless Services",
+   "level": "working",
+   "miss_type": "confident miss",
+   "picked_before": "One virtual IP that load-balances across the pods",
+   "covered_on": "19",
+   "priority": 3,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/KN-6",
+   "concept": "kn",
+   "kind": "miss",
+   "title": "Gateway API vs Ingress",
+   "level": "working",
+   "miss_type": "confident miss",
+   "picked_before": "Gateway API only handles L4 traffic, while Ingress handles L7 routing",
+   "covered_on": "22",
+   "priority": 3,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/KO-2",
+   "concept": "ko",
+   "kind": "miss",
+   "title": "Probe design: don't check dependencies",
+   "level": "working",
+   "miss_type": "confident miss",
+   "picked_before": "Nothing, because probes ignore failures that last under 5 minutes",
+   "covered_on": "12",
+   "priority": 3,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/KO-4",
+   "concept": "ko",
+   "kind": "miss",
+   "title": "Exit codes: 137, 143, 139",
+   "level": "foundation",
+   "miss_type": "confident miss",
+   "picked_before": "It exited cleanly after receiving SIGTERM",
+   "covered_on": "1",
+   "priority": 3,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/KO-7",
+   "concept": "ko",
+   "kind": "miss",
+   "title": "ReadWriteOnce and Multi-Attach errors",
+   "level": "senior",
+   "miss_type": "confident miss",
+   "picked_before": "RWO allows one pod cluster-wide, so the new pod has to wait its turn",
+   "covered_on": "18",
+   "priority": 3,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/LNX-4",
+   "concept": "lnx",
+   "kind": "miss",
+   "title": "Page cache vs available memory",
+   "level": "foundation",
+   "miss_type": "confident miss",
+   "picked_before": "No; 'available' includes swap space, and there's plenty",
+   "covered_on": "2",
+   "priority": 3,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/LNX-6",
+   "concept": "lnx",
+   "kind": "miss",
+   "title": "systemd restart policies",
+   "level": "working",
+   "miss_type": "confident miss",
+   "picked_before": "Restart=on-abnormal",
+   "covered_on": "4",
+   "priority": 3,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/LNX-8",
+   "concept": "lnx",
+   "kind": "miss",
+   "title": "OOM killer scoring and Kubernetes QoS",
+   "level": "senior",
+   "miss_type": "confident miss",
+   "picked_before": "The pod with the lowest PriorityClass value, which always goes first",
+   "covered_on": "2",
+   "priority": 3,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/NET-4",
+   "concept": "net",
+   "kind": "miss",
+   "title": "MTU and PMTUD black holes",
+   "level": "working",
+   "miss_type": "confident miss",
+   "picked_before": "TCP window scaling is off, which caps each connection at 64 KB",
+   "covered_on": "6, 16",
+   "priority": 3,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/NET-5",
+   "concept": "net",
+   "kind": "miss",
+   "title": "Asymmetric routing and policy routing",
+   "level": "senior",
+   "miss_type": "confident miss",
+   "picked_before": "A second default route via eth1 with the same metric as eth0's",
+   "covered_on": "16",
+   "priority": 3,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/OBS-1",
+   "concept": "obs",
+   "kind": "miss",
+   "title": "Metric types: counters",
+   "level": "foundation",
+   "miss_type": "confident miss",
+   "picked_before": "A histogram with a single bucket",
+   "covered_on": "month 2",
+   "priority": 3,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/OBS-3",
+   "concept": "obs",
+   "kind": "miss",
+   "title": "The four golden signals",
+   "level": "foundation",
+   "miss_type": "confident miss",
+   "picked_before": "Logs, metrics, traces, events",
+   "covered_on": "month 2",
+   "priority": 3,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/OBS-4",
+   "concept": "obs",
+   "kind": "miss",
+   "title": "Error budgets",
+   "level": "foundation",
+   "miss_type": "confident miss",
+   "picked_before": "Capping how many alerts are allowed to page on-call engineers each week",
+   "covered_on": "month 2",
+   "priority": 3,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/OBS-6",
+   "concept": "obs",
+   "kind": "miss",
+   "title": "Distributed tracing",
+   "level": "foundation",
+   "miss_type": "confident miss",
+   "picked_before": "Per-service latency dashboards compared side by side",
+   "covered_on": "month 2",
+   "priority": 3,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/SEC-2",
+   "concept": "sec",
+   "kind": "miss",
+   "title": "OIDC authentication for kubectl",
+   "level": "working",
+   "miss_type": "confident miss",
+   "picked_before": "A session cookie that the identity provider's login page set earlier",
+   "covered_on": "month 2",
+   "priority": 3,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/SEC-5",
+   "concept": "sec",
+   "kind": "miss",
+   "title": "RBAC escalation through pod creation",
+   "level": "senior",
+   "miss_type": "confident miss",
+   "picked_before": "Only Secrets that existing pods in the namespace already mount",
+   "covered_on": "22",
+   "priority": 3,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/VIRT-6",
+   "concept": "virt",
+   "kind": "miss",
+   "title": "CPU models and live migration",
+   "level": "senior",
+   "miss_type": "confident miss",
+   "picked_before": "The 'host' type pins the VM's vCPUs to specific physical cores",
+   "covered_on": "self-study",
+   "priority": 3,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/CLD-3",
+   "concept": "cld",
+   "kind": "miss",
+   "title": "Security Groups vs NACLs",
+   "level": "working",
+   "miss_type": "didn't know",
+   "picked_before": "",
+   "covered_on": "month 2",
+   "priority": 1,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/CLD-8",
+   "concept": "cld",
+   "kind": "miss",
+   "title": "Zonal storage and scheduling",
+   "level": "working",
+   "miss_type": "didn't know",
+   "picked_before": "",
+   "covered_on": "month 2",
+   "priority": 1,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/CODE-3",
+   "concept": "code",
+   "kind": "miss",
+   "title": "Go channels and deadlock",
+   "level": "working",
+   "miss_type": "didn't know",
+   "picked_before": "",
+   "covered_on": "25",
+   "priority": 1,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/CODE-4",
+   "concept": "code",
+   "kind": "miss",
+   "title": "Writing operators with controller-runtime",
+   "level": "working",
+   "miss_type": "didn't know",
+   "picked_before": "",
+   "covered_on": "24",
+   "priority": 1,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/CTR-2",
+   "concept": "ctr",
+   "kind": "miss",
+   "title": "Dockerfile layer caching",
+   "level": "working",
+   "miss_type": "wrong guess",
+   "picked_before": "apt-get update can't run as root inside a build container",
+   "covered_on": "self-study",
+   "priority": 2,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/DS-8",
+   "concept": "ds",
+   "kind": "miss",
+   "title": "Leader election and fencing",
+   "level": "senior",
+   "miss_type": "didn't know",
+   "picked_before": "",
+   "covered_on": "course 3",
+   "priority": 1,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/DTL-2",
+   "concept": "dtl",
+   "kind": "miss",
+   "title": "CNAME at the zone apex",
+   "level": "working",
+   "miss_type": "didn't know",
+   "picked_before": "",
+   "covered_on": "5",
+   "priority": 1,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/DTL-3",
+   "concept": "dtl",
+   "kind": "miss",
+   "title": "TLS SNI",
+   "level": "foundation",
+   "miss_type": "wrong guess",
+   "picked_before": "Lets the client and server agree on the strongest shared cipher suite",
+   "covered_on": "19",
+   "priority": 2,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/DTL-4",
+   "concept": "dtl",
+   "kind": "miss",
+   "title": "Mutual TLS",
+   "level": "foundation",
+   "miss_type": "didn't know",
+   "picked_before": "",
+   "covered_on": "19",
+   "priority": 1,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/IAC-6",
+   "concept": "iac",
+   "kind": "miss",
+   "title": "Ansible idempotency",
+   "level": "foundation",
+   "miss_type": "didn't know",
+   "picked_before": "",
+   "covered_on": "month 2",
+   "priority": 1,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/KC-10",
+   "concept": "kc",
+   "kind": "miss",
+   "title": "ownerReferences and garbage collection",
+   "level": "working",
+   "miss_type": "didn't know",
+   "picked_before": "",
+   "covered_on": "24",
+   "priority": 1,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/KC-4",
+   "concept": "kc",
+   "kind": "miss",
+   "title": "Controllers and level-triggered reconciliation",
+   "level": "working",
+   "miss_type": "wrong guess",
+   "picked_before": "They run as scheduled jobs that re-apply manifests on an interval",
+   "covered_on": "24",
+   "priority": 2,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/KC-6",
+   "concept": "kc",
+   "kind": "miss",
+   "title": "Admission webhook failure modes",
+   "level": "senior",
+   "miss_type": "didn't know",
+   "picked_before": "",
+   "covered_on": "23",
+   "priority": 1,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/KC-7",
+   "concept": "kc",
+   "kind": "miss",
+   "title": "Optimistic concurrency and resourceVersion",
+   "level": "senior",
+   "miss_type": "didn't know",
+   "picked_before": "",
+   "covered_on": "24",
+   "priority": 1,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/KN-2",
+   "concept": "kn",
+   "kind": "miss",
+   "title": "externalTrafficPolicy: Local",
+   "level": "working",
+   "miss_type": "didn't know",
+   "picked_before": "",
+   "covered_on": "20",
+   "priority": 1,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/KN-4",
+   "concept": "kn",
+   "kind": "miss",
+   "title": "kube-proxy iptables mode at scale",
+   "level": "working",
+   "miss_type": "didn't know",
+   "picked_before": "",
+   "covered_on": "20",
+   "priority": 1,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/KO-8",
+   "concept": "ko",
+   "kind": "miss",
+   "title": "Version skew and upgrade order",
+   "level": "working",
+   "miss_type": "didn't know",
+   "picked_before": "",
+   "covered_on": "25",
+   "priority": 1,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/LNX-1",
+   "concept": "lnx",
+   "kind": "miss",
+   "title": "Signals: SIGTERM vs SIGKILL",
+   "level": "foundation",
+   "miss_type": "didn't know",
+   "picked_before": "",
+   "covered_on": "1",
+   "priority": 1,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/LNX-2",
+   "concept": "lnx",
+   "kind": "miss",
+   "title": "Zombie processes and reaping",
+   "level": "foundation",
+   "miss_type": "didn't know",
+   "picked_before": "",
+   "covered_on": "1",
+   "priority": 1,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/LNX-3",
+   "concept": "lnx",
+   "kind": "miss",
+   "title": "Load average and D-state tasks",
+   "level": "working",
+   "miss_type": "wrong guess",
+   "picked_before": "Hypervisor CPU steal is being added into the load average figure",
+   "covered_on": "7",
+   "priority": 2,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/LNX-5",
+   "concept": "lnx",
+   "kind": "miss",
+   "title": "File descriptor limits under systemd",
+   "level": "working",
+   "miss_type": "didn't know",
+   "picked_before": "",
+   "covered_on": "4",
+   "priority": 1,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/LNX-7",
+   "concept": "lnx",
+   "kind": "miss",
+   "title": "Durability: fsync and the page cache",
+   "level": "senior",
+   "miss_type": "didn't know",
+   "picked_before": "",
+   "covered_on": "11",
+   "priority": 1,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/NET-1",
+   "concept": "net",
+   "kind": "miss",
+   "title": "Subnetting",
+   "level": "foundation",
+   "miss_type": "wrong guess",
+   "picked_before": "32",
+   "covered_on": "warm-ups",
+   "priority": 2,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/NET-10",
+   "concept": "net",
+   "kind": "miss",
+   "title": "Reading tcpdump: RST vs timeout",
+   "level": "working",
+   "miss_type": "wrong guess",
+   "picked_before": "The TLS certificate doesn't match the hostname the client requested",
+   "covered_on": "6",
+   "priority": 2,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/NET-3",
+   "concept": "net",
+   "kind": "miss",
+   "title": "TCP states: TIME_WAIT",
+   "level": "working",
+   "miss_type": "didn't know",
+   "picked_before": "",
+   "covered_on": "6",
+   "priority": 1,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/OBS-2",
+   "concept": "obs",
+   "kind": "miss",
+   "title": "rate() and counter resets",
+   "level": "foundation",
+   "miss_type": "didn't know",
+   "picked_before": "",
+   "covered_on": "month 2",
+   "priority": 1,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/OBS-8",
+   "concept": "obs",
+   "kind": "miss",
+   "title": "Loki's design and label cardinality",
+   "level": "working",
+   "miss_type": "didn't know",
+   "picked_before": "",
+   "covered_on": "month 2",
+   "priority": 1,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/SEC-4",
+   "concept": "sec",
+   "kind": "miss",
+   "title": "Pod hardening",
+   "level": "working",
+   "miss_type": "didn't know",
+   "picked_before": "",
+   "covered_on": "22",
+   "priority": 1,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/VIRT-2",
+   "concept": "virt",
+   "kind": "miss",
+   "title": "Fencing (STONITH)",
+   "level": "working",
+   "miss_type": "didn't know",
+   "picked_before": "",
+   "covered_on": "self-study",
+   "priority": 1,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/VIRT-5",
+   "concept": "virt",
+   "kind": "miss",
+   "title": "Live migration and storage",
+   "level": "working",
+   "miss_type": "wrong guess",
+   "picked_before": "Local storage migrates faster, because no disk data has to cross the network",
+   "covered_on": "self-study",
+   "priority": 2,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/CTR-3",
+   "concept": "ctr",
+   "kind": "miss",
+   "title": "PID 1 and signal handling",
+   "level": "working",
+   "miss_type": "shaky (right, guessed)",
+   "picked_before": "",
+   "covered_on": "1",
+   "priority": 0,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/CTR-5",
+   "concept": "ctr",
+   "kind": "miss",
+   "title": "CPU limits and CFS throttling",
+   "level": "senior",
+   "miss_type": "shaky (right, guessed)",
+   "picked_before": "",
+   "covered_on": "26",
+   "priority": 0,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/KC-9",
+   "concept": "kc",
+   "kind": "miss",
+   "title": "CRDs vs operators",
+   "level": "working",
+   "miss_type": "shaky (right, guessed)",
+   "picked_before": "",
+   "covered_on": "24",
+   "priority": 0,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/LNX-9",
+   "concept": "lnx",
+   "kind": "miss",
+   "title": "File permissions and the execute bit",
+   "level": "foundation",
+   "miss_type": "shaky (right, guessed)",
+   "picked_before": "",
+   "covered_on": "3",
+   "priority": 0,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  },
+  {
+   "id": "interview/SEC-3",
+   "concept": "sec",
+   "kind": "miss",
+   "title": "OAuth2 vs OIDC",
+   "level": "foundation",
+   "miss_type": "shaky (right, guessed)",
+   "picked_before": "",
+   "covered_on": "month 2",
+   "priority": 0,
+   "check": {
+    "type": "manual"
+   },
+   "minutes": 3
+  }
+ ]
+}

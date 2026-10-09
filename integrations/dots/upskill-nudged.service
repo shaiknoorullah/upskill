@@ -1,0 +1,27 @@
+# chezmoi target: ~/.config/systemd/user/upskill-nudged.service
+# Do not enable until the dots cutover is done (see README.md).
+[Unit]
+Description=upskill drift detector (offers 5-minute learning sessions)
+Documentation=file://%h/upskill/drift/README.md
+After=graphical-session.target
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/env python3 %h/upskill/drift/nudged.py
+Restart=on-failure
+RestartSec=30
+# notify-send, makoctl, pactl, tmux, tmux-cli and claude may live outside the
+# default user-manager PATH. Adjust to your machine.
+Environment=PATH=%h/.local/bin:%h/.nix-profile/bin:/home/linuxbrew/.linuxbrew/bin:/usr/local/bin:/usr/bin:/bin
+Environment=PYTHONUNBUFFERED=1
+# Only talks to ActivityWatch on localhost (GET only); no other network.
+# IPAddressDeny/Allow need BPF delegation to the user manager; enable if yours has it:
+#IPAddressDeny=any
+#IPAddressAllow=localhost
+NoNewPrivileges=yes
+# Keep /tmp shared: tmux's socket lives in /tmp/tmux-$UID.
+PrivateTmp=no
+
+[Install]
+WantedBy=graphical-session.target

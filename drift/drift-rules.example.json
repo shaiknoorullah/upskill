@@ -1,0 +1,32 @@
+{
+  "_comment": "Generic example only. Copy to local/drift-rules.json (gitignored) and add your own domains there. Never commit employer or internal domains here.",
+  "domains": {
+    "claude.ai": "work",
+    "github.com": "work",
+    "gitlab.com": "work",
+    "kubernetes.io": "work",
+    "stackoverflow.com": "work",
+    "killercoda.com": "work",
+    "killer.sh": "work",
+    "youtube.com": "drift",
+    "reddit.com": "drift",
+    "x.com": "drift",
+    "twitter.com": "drift",
+    "instagram.com": "drift",
+    "netflix.com": "drift"
+  },
+  "patterns": {
+    "work": ["^docs\\.", "grafana", "argo"],
+    "drift": ["news"],
+    "neutral": []
+  },
+  "apps": {
+    "kitty": "terminal",
+    "alacritty": "terminal",
+    "foot": "terminal",
+    "wezterm": "terminal",
+    "zen": "browser",
+    "firefox": "browser",
+    "code": "work"
+  }
+}

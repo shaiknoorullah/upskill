@@ -1,0 +1,29 @@
+2026-10-07T10:00:00.120Z INFO  [api] request_id=a1f3 method=GET path=/health status=200 latency_ms=2
+2026-10-07T10:00:01.004Z INFO  [api] request_id=b7c2 method=GET path=/api/items status=200 latency_ms=45
+2026-10-07T10:00:02.511Z WARN  [db] slow query detected duration_ms=1203 table=orders
+2026-10-07T10:00:03.900Z ERROR [api] request_id=c9d0 method=POST path=/api/orders status=500 latency_ms=913 msg="insert failed"
+Traceback (most recent call last):
+  File "/app/orders/service.py", line 88, in create_order
+    db.insert(order)
+  File "/app/db/client.py", line 41, in insert
+    raise IntegrityError("duplicate key value violates unique constraint")
+db.errors.IntegrityError: duplicate key value violates unique constraint
+2026-10-07T10:00:05.000Z ERROR [healthcheck] request_id=d001 method=GET path=/health status=503 latency_ms=1 msg="db ping failed"
+2026-10-07T10:00:06.250Z INFO  [api] request_id=e5a9 method=POST path=/api/payments latency_ms=5000 status=500 msg="gateway timeout"
+2026-10-07T10:00:07.777Z FATAL [worker] msg="out of memory" rss_mb=2048
+2026-10-07T10:00:08.010Z INFO  [api] request_id=f001 method=GET path=/api/items/9981 status=500 latency_ms=1204
+2026-10-07T10:00:09.300Z DEBUG [api] request_id=f002 msg="ERROR handling is enabled" status=200 latency_ms=3
+2026-10-07T10:00:10.000Z ERROR [api] request_id=f003 method=POST path=/api/cart status=504 latency_ms=60000 msg="upstream timeout"
+2026-10-07T10:00:11.420Z ERROR [api] request_id=f004 method=GET path=/api/users status=500 latency_ms=12 msg="nil pointer"
+Traceback (most recent call last):
+  File "/app/users/views.py", line 12, in get_user
+    return User.objects.get(id=uid)
+KeyError: 'uid'
+2026-10-07T10:00:12.000Z INFO  [api] request_id=f005 method=GET path=/api/reports status=200 latency_ms=4500
+2026-10-07T10:00:13.000Z WARN  [api] request_id=f006 method=GET path=/api/export status=500 latency_ms=999
+2026-10-07T10:00:13.500Z INFO  [api] request_id=f007 method=GET path=/api/export status=5000 latency_ms=1500
+2026-10-07T10:00:14.000Z ERROR [worker] job_id=77 msg="retry exhausted"
+Traceback (most recent call last):
+  File "/app/jobs/runner.py", line 230, in run
+    raise TimeoutError(f"job {job_id} exceeded 300s")
+TimeoutError: job 77 exceeded 300s

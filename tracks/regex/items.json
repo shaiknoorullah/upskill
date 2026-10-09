@@ -1,0 +1,389 @@
+{
+ "track": "regex",
+ "cert_domains": [
+  "LFCS: Essential Commands",
+  "RHCSA: essential tools incl. grep and regex"
+ ],
+ "items": [
+  {
+   "id": "regex/1",
+   "concept": "context-anchoring",
+   "kind": "exercise",
+   "title": "Count 5xx server errors",
+   "level": "intermediate",
+   "prompt": "EXERCISES.md#1",
+   "check": {
+    "type": "regex",
+    "n": "1"
+   },
+   "minutes": 5
+  },
+  {
+   "id": "regex/2",
+   "concept": "context-anchoring",
+   "kind": "exercise",
+   "title": "Unique IPs that POSTed",
+   "level": "intermediate",
+   "prompt": "EXERCISES.md#2",
+   "check": {
+    "type": "regex",
+    "n": "2"
+   },
+   "minutes": 5
+  },
+  {
+   "id": "regex/3",
+   "concept": "extract-and-count",
+   "kind": "exercise",
+   "title": "Top-3 invalid ssh usernames",
+   "level": "intermediate",
+   "prompt": "EXERCISES.md#3",
+   "check": {
+    "type": "regex",
+    "n": "3"
+   },
+   "minutes": 5
+  },
+  {
+   "id": "regex/4",
+   "concept": "word-boundaries",
+   "kind": "exercise",
+   "title": "TODO/FIXME/HACK markers",
+   "level": "intermediate",
+   "prompt": "EXERCISES.md#4",
+   "check": {
+    "type": "regex",
+    "n": "4"
+   },
+   "minutes": 5
+  },
+  {
+   "id": "regex/4a",
+   "concept": "word-boundaries",
+   "kind": "drill",
+   "title": "Which queries touch users (-c, _ is a word char)",
+   "prompt": "DRILLS-04-word-boundaries.md#4a",
+   "check": {
+    "type": "regex",
+    "n": "4a"
+   },
+   "prereqs": [
+    "regex/4"
+   ],
+   "minutes": 5
+  },
+  {
+   "id": "regex/4b",
+   "concept": "zero-width-vs-consuming",
+   "kind": "drill",
+   "title": "Exact service name shop-api",
+   "prompt": "DRILLS-04-word-boundaries.md#4b",
+   "check": {
+    "type": "regex",
+    "n": "4b"
+   },
+   "prereqs": [
+    "regex/4"
+   ],
+   "minutes": 5
+  },
+  {
+   "id": "regex/4c",
+   "concept": "fixed-strings",
+   "kind": "drill",
+   "title": "Exact IP 10.0.1.1 (-F and -w)",
+   "prompt": "DRILLS-04-word-boundaries.md#4c",
+   "check": {
+    "type": "regex",
+    "n": "4c"
+   },
+   "prereqs": [
+    "regex/4"
+   ],
+   "minutes": 5
+  },
+  {
+   "id": "regex/4d",
+   "concept": "word-boundaries",
+   "kind": "drill",
+   "title": "Log level by position, any case",
+   "prompt": "DRILLS-04-word-boundaries.md#4d",
+   "check": {
+    "type": "regex",
+    "n": "4d"
+   },
+   "prereqs": [
+    "regex/4"
+   ],
+   "minutes": 5
+  },
+  {
+   "id": "regex/4e",
+   "concept": "extract-and-count",
+   "kind": "drill",
+   "title": "Marker leaderboard (-o -h)",
+   "prompt": "DRILLS-04-word-boundaries.md#4e",
+   "check": {
+    "type": "regex",
+    "n": "4e"
+   },
+   "prereqs": [
+    "regex/4"
+   ],
+   "minutes": 5
+  },
+  {
+   "id": "regex/4f",
+   "concept": "grep-file-flags",
+   "kind": "drill",
+   "title": "Files containing TODO (-l)",
+   "prompt": "DRILLS-04-word-boundaries.md#4f",
+   "check": {
+    "type": "regex",
+    "n": "4f"
+   },
+   "prereqs": [
+    "regex/4"
+   ],
+   "minutes": 5
+  },
+  {
+   "id": "regex/4g",
+   "concept": "context-anchoring",
+   "kind": "drill",
+   "title": "DELETE/UPDATE without WHERE",
+   "prompt": "DRILLS-04-word-boundaries.md#4g",
+   "check": {
+    "type": "regex",
+    "n": "4g"
+   },
+   "prereqs": [
+    "regex/4"
+   ],
+   "minutes": 5
+  },
+  {
+   "id": "regex/4h",
+   "concept": "when-not-to-use-w",
+   "kind": "drill",
+   "title": "Destructive commands, not --force-with-lease",
+   "prompt": "DRILLS-04-word-boundaries.md#4h",
+   "check": {
+    "type": "regex",
+    "n": "4h"
+   },
+   "prereqs": [
+    "regex/4"
+   ],
+   "minutes": 5
+  },
+  {
+   "id": "regex/5",
+   "concept": "context-anchoring",
+   "kind": "exercise",
+   "title": "Real ERROR/FATAL log levels",
+   "level": "intermediate",
+   "prompt": "EXERCISES.md#5",
+   "check": {
+    "type": "regex",
+    "n": "5"
+   },
+   "minutes": 5
+  },
+  {
+   "id": "regex/6",
+   "concept": "anchors-and-quoting",
+   "kind": "exercise",
+   "title": "Empty .env values",
+   "level": "intermediate",
+   "prompt": "EXERCISES.md#6",
+   "check": {
+    "type": "regex",
+    "n": "6"
+   },
+   "minutes": 5
+  },
+  {
+   "id": "regex/7",
+   "concept": "backreferences",
+   "kind": "exercise",
+   "title": "Doubled words",
+   "level": "intermediate",
+   "prompt": "EXERCISES.md#7",
+   "check": {
+    "type": "regex",
+    "n": "7"
+   },
+   "minutes": 5
+  },
+  {
+   "id": "regex/8",
+   "concept": "numeric-ranges",
+   "kind": "exercise",
+   "title": "Valid IPv4 only",
+   "level": "advanced",
+   "prompt": "EXERCISES.md#8",
+   "check": {
+    "type": "regex",
+    "n": "8"
+   },
+   "minutes": 5
+  },
+  {
+   "id": "regex/9",
+   "concept": "lookaround-and-K",
+   "kind": "exercise",
+   "title": "Brute-force source IPs",
+   "level": "advanced",
+   "prompt": "EXERCISES.md#9",
+   "check": {
+    "type": "regex",
+    "n": "9"
+   },
+   "minutes": 5
+  },
+  {
+   "id": "regex/10",
+   "concept": "field-anchoring",
+   "kind": "exercise",
+   "title": "Strict email per CSV field",
+   "level": "advanced",
+   "prompt": "EXERCISES.md#10",
+   "check": {
+    "type": "regex",
+    "n": "10"
+   },
+   "minutes": 5
+  },
+  {
+   "id": "regex/11",
+   "concept": "capture-groups",
+   "kind": "exercise",
+   "title": "Slow endpoints report (sed)",
+   "level": "advanced",
+   "prompt": "EXERCISES.md#11",
+   "check": {
+    "type": "regex",
+    "n": "11"
+   },
+   "minutes": 5
+  },
+  {
+   "id": "regex/12",
+   "concept": "backreferences",
+   "kind": "exercise",
+   "title": "US dates to ISO (sed)",
+   "level": "advanced",
+   "prompt": "EXERCISES.md#12",
+   "check": {
+    "type": "regex",
+    "n": "12"
+   },
+   "minutes": 5
+  },
+  {
+   "id": "regex/13",
+   "concept": "alternation-exact-length",
+   "kind": "exercise",
+   "title": "Secret scanner",
+   "level": "advanced",
+   "prompt": "EXERCISES.md#13",
+   "check": {
+    "type": "regex",
+    "n": "13"
+   },
+   "minutes": 5
+  },
+  {
+   "id": "regex/14",
+   "concept": "nested-optional-groups",
+   "kind": "exercise",
+   "title": "SemVer validation",
+   "level": "advanced",
+   "prompt": "EXERCISES.md#14",
+   "check": {
+    "type": "regex",
+    "n": "14"
+   },
+   "minutes": 5
+  },
+  {
+   "id": "regex/15",
+   "concept": "lookaround-and-K",
+   "kind": "exercise",
+   "title": "Multi-condition lookaheads",
+   "level": "expert",
+   "prompt": "EXERCISES.md#15",
+   "check": {
+    "type": "regex",
+    "n": "15"
+   },
+   "minutes": 5
+  },
+  {
+   "id": "regex/16",
+   "concept": "negative-lookahead",
+   "kind": "exercise",
+   "title": "Uncommented console.log",
+   "level": "expert",
+   "prompt": "EXERCISES.md#16",
+   "check": {
+    "type": "regex",
+    "n": "16"
+   },
+   "minutes": 5
+  },
+  {
+   "id": "regex/17",
+   "concept": "stacked-lookaheads",
+   "kind": "exercise",
+   "title": "Password policy in one regex",
+   "level": "expert",
+   "prompt": "EXERCISES.md#17",
+   "check": {
+    "type": "regex",
+    "n": "17"
+   },
+   "minutes": 5
+  },
+  {
+   "id": "regex/18",
+   "concept": "awk-stateful",
+   "kind": "exercise",
+   "title": "Traceback attribution (awk)",
+   "level": "expert",
+   "prompt": "EXERCISES.md#18",
+   "check": {
+    "type": "regex",
+    "n": "18"
+   },
+   "minutes": 5
+  },
+  {
+   "id": "regex/19",
+   "concept": "greedy-vs-negated",
+   "kind": "exercise",
+   "title": "PII redaction (sed)",
+   "level": "expert",
+   "prompt": "EXERCISES.md#19",
+   "check": {
+    "type": "regex",
+    "n": "19"
+   },
+   "minutes": 5
+  },
+  {
+   "id": "regex/20",
+   "concept": "awk-fields",
+   "kind": "exercise",
+   "title": "Unhealthy pods (awk)",
+   "level": "expert",
+   "prompt": "EXERCISES.md#20",
+   "check": {
+    "type": "regex",
+    "n": "20"
+   },
+   "minutes": 5
+  }
+ ]
+}

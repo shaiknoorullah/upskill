@@ -1,0 +1,27 @@
+192.168.1.10 - - [07/Oct/2026:10:00:01 +0000] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (X11; Linux x86_64) Firefox/131.0" rt=0.012
+192.168.1.10 - - [07/Oct/2026:10:00:02 +0000] "GET /static/app.js HTTP/1.1" 200 50012 "https://shop.example.com/" "Mozilla/5.0 (X11; Linux x86_64) Firefox/131.0" rt=0.034
+10.0.0.5 - - [07/Oct/2026:10:00:05 +0000] "POST /api/login HTTP/1.1" 401 512 "-" "curl/8.5.0" rt=0.101
+10.0.0.5 - - [07/Oct/2026:10:00:06 +0000] "POST /api/login HTTP/1.1" 200 734 "-" "curl/8.5.0" rt=0.098
+203.0.113.42 - - [07/Oct/2026:10:01:10 +0000] "GET /api/items?limit=500 HTTP/1.1" 200 18234 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" rt=0.452
+203.0.113.42 - - [07/Oct/2026:10:01:12 +0000] "GET /api/items/9981 HTTP/1.1" 500 503 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" rt=1.204
+198.51.100.7 - - [07/Oct/2026:10:02:00 +0000] "GET /robots.txt HTTP/1.1" 200 68 "-" "Googlebot/2.1 (+http://www.google.com/bot.html)" rt=0.002
+198.51.100.7 - - [07/Oct/2026:10:02:01 +0000] "GET /products/500-thread-count-sheets HTTP/1.1" 200 22011 "-" "Googlebot/2.1 (+http://www.google.com/bot.html)" rt=0.230
+172.16.4.20 - admin [07/Oct/2026:10:03:33 +0000] "PUT /api/items/12 HTTP/1.1" 204 0 "-" "PostmanRuntime/7.39.0" rt=0.087
+172.16.4.20 - admin [07/Oct/2026:10:03:40 +0000] "DELETE /api/items/13 HTTP/1.1" 502 157 "-" "PostmanRuntime/7.39.0" rt=30.001
+45.33.32.156 - - [07/Oct/2026:10:04:12 +0000] "GET /wp-login.php HTTP/1.1" 404 153 "-" "Mozilla/5.0 zgrab/0.x" rt=0.001
+45.33.32.156 - - [07/Oct/2026:10:04:13 +0000] "GET /.env HTTP/1.1" 404 153 "-" "Mozilla/5.0 zgrab/0.x" rt=0.001
+45.33.32.156 - - [07/Oct/2026:10:04:13 +0000] "GET /../../etc/passwd HTTP/1.1" 400 157 "-" "Mozilla/5.0 zgrab/0.x" rt=0.001
+45.33.32.156 - - [07/Oct/2026:10:04:14 +0000] "POST /xmlrpc.php HTTP/1.1" 404 153 "-" "Mozilla/5.0 zgrab/0.x" rt=0.001
+192.168.1.11 - - [07/Oct/2026:10:05:00 +0000] "GET /checkout HTTP/2.0" 200 9120 "https://shop.example.com/cart" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/129.0" rt=0.310
+192.168.1.11 - - [07/Oct/2026:10:05:03 +0000] "POST /api/orders HTTP/2.0" 201 845 "https://shop.example.com/checkout" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/129.0" rt=1.876
+192.168.1.11 - - [07/Oct/2026:10:05:09 +0000] "POST /api/payments HTTP/2.0" 503 5003 "https://shop.example.com/checkout" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/129.0" rt=5.000
+2001:db8::1 - - [07/Oct/2026:10:06:00 +0000] "GET /health HTTP/1.1" 200 2 "-" "kube-probe/1.30" rt=0.001
+2001:db8::1 - - [07/Oct/2026:10:06:10 +0000] "GET /health HTTP/1.1" 200 2 "-" "kube-probe/1.30" rt=0.001
+10.0.0.5 - - [07/Oct/2026:10:07:21 +0000] "POST /api/orders HTTP/1.1" 500 98 "-" "curl/8.5.0" rt=0.913
+10.0.0.5 - - [07/Oct/2026:10:07:22 +0000] "GET /api/orders/500 HTTP/1.1" 404 153 "-" "curl/8.5.0" rt=0.015
+66.249.66.1 - - [07/Oct/2026:10:08:00 +0000] "GET /sitemap.xml HTTP/1.1" 200 4021 "-" "Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)" rt=0.020
+66.249.66.1 - - [07/Oct/2026:10:08:02 +0000] "GET /blog/when-to-use-POST HTTP/1.1" 200 7781 "-" "Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)" rt=0.044
+192.168.1.10 - - [07/Oct/2026:10:09:45 +0000] "GET /search?q=red%20shoes&page=2 HTTP/1.1" 200 15300 "https://shop.example.com/" "Mozilla/5.0 (X11; Linux x86_64) Firefox/131.0" rt=0.640
+192.168.1.10 - - [07/Oct/2026:10:09:50 +0000] "GET /search?q=%27%20OR%201%3D1-- HTTP/1.1" 400 157 "-" "sqlmap/1.8" rt=0.003
+203.0.113.42 - - [07/Oct/2026:10:10:30 +0000] "POST /api/cart HTTP/1.1" 200 312 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" rt=0.120
+203.0.113.42 - - [07/Oct/2026:10:10:31 +0000] "POST /api/cart HTTP/1.1" 504 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" rt=60.000

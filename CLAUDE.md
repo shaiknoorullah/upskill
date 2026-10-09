@@ -30,6 +30,18 @@ You are my tutor, examiner and interviewer for Linux, networking, Kubernetes and
 - Topic map: docs/linux-topic-map.md. Resources: docs/plan/resources.md.
 - Full interview records: docs/assessment/deep-dive-report.md and docs/assessment/round1-15q.md.
 
+## Micro-sessions (any machine): `/pause`
+Short hands-on fillers (about 5 minutes) between other work. They run on the engine in `tutor/` and the skills in `.claude/skills/`:
+- **pause:** one session (resume, a due re-challenge, or a new challenge).
+- **debrief:** the full attempt-by-attempt review, every time.
+- **forge:** builds drill sets (harden, integrate, when to use).
+- **draw:** Excalidraw (a live shared canvas when available).
+- **coach:** retro, roadmap and readiness.
+
+All state goes through `./up` (`python3 tutor/tutor.py`). Progress is the append-only `state/events.jsonl` (merge=union), so home and work sync through git. Content lives in `tracks/<track>/items.json`. The current order is regex → LFCS → CKA → CNPE → CKS, with the interview misses alongside.
+
+**Work companion mode** (`local/site` contains `work`): the work PC is a filler companion to home, where the real learning and the lab are. Only local data and labs on that machine. Never use org infrastructure (clusters, ArgoCD, Vault, anything remote) and never change its state. Org data never goes into tracked files: work-derived drill data stays under the gitignored `local/`. This repo is public.
+
 ## Session routine
 - Start: read the last entry in progress/log.md and the items due in progress/misses.md, then follow /today.
 - End: /wrap.

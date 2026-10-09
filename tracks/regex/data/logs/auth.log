@@ -1,0 +1,27 @@
+Oct  7 09:58:01 web01 sshd[2101]: Failed password for invalid user admin from 45.33.32.156 port 51234 ssh2
+Oct  7 09:58:03 web01 sshd[2101]: Failed password for invalid user admin from 45.33.32.156 port 51236 ssh2
+Oct  7 09:58:05 web01 sshd[2103]: Invalid user admin from 45.33.32.156 port 51240
+Oct  7 09:58:07 web01 sshd[2105]: Invalid user oracle from 45.33.32.156 port 51244
+Oct  7 09:58:09 web01 sshd[2105]: Failed password for invalid user oracle from 45.33.32.156 port 51244 ssh2
+Oct  7 09:59:12 web01 sshd[2110]: Failed password for root from 185.220.101.4 port 40022 ssh2
+Oct  7 09:59:14 web01 sshd[2110]: Failed password for root from 185.220.101.4 port 40022 ssh2
+Oct  7 09:59:16 web01 sshd[2110]: Failed password for root from 185.220.101.4 port 40022 ssh2
+Oct  7 09:59:16 web01 sshd[2110]: error: maximum authentication attempts exceeded for root from 185.220.101.4 port 40022 ssh2 [preauth]
+Oct  7 10:00:30 web01 sshd[2120]: Accepted publickey for deploy from 10.0.0.5 port 60111 ssh2: ED25519 SHA256:Zx9fakefingerprint
+Oct  7 10:00:31 web01 sshd[2120]: pam_unix(sshd:session): session opened for user deploy(uid=1001) by (uid=0)
+Oct  7 10:01:02 web01 sudo:   deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx
+Oct  7 10:02:44 web01 sshd[2131]: Invalid user test from 103.77.12.9 port 33012
+Oct  7 10:02:46 web01 sshd[2131]: Failed password for invalid user test from 103.77.12.9 port 33012 ssh2
+Oct  7 10:02:50 web01 sshd[2133]: Invalid user ubuntu from 103.77.12.9 port 33020
+Oct  7 10:02:52 web01 sshd[2133]: Failed password for invalid user ubuntu from 103.77.12.9 port 33020 ssh2
+Oct  7 10:03:10 web01 sshd[2140]: Invalid user admin from 103.77.12.9 port 33100
+Oct  7 10:03:12 web01 sshd[2141]: Invalid user oracle from 103.77.12.9 port 33102
+Oct  7 10:05:00 web01 sshd[2150]: Failed password for alice from 192.168.1.10 port 55500 ssh2
+Oct  7 10:05:08 web01 sshd[2150]: Accepted password for alice from 192.168.1.10 port 55500 ssh2
+Oct  7 10:07:19 web01 sshd[2160]: Invalid user admin from 45.33.32.156 port 52000
+Oct  7 10:07:20 web01 sshd[2161]: Invalid user test from 45.33.32.156 port 52002
+Oct  7 10:07:21 web01 sshd[2160]: Invalid user postgres from 185.220.101.4 port 41000
+Oct  7 10:07:23 web01 sshd[2162]: Invalid user test from 185.220.101.4 port 41002
+Oct  7 10:07:25 web01 sshd[2163]: Invalid user admin from 185.220.101.4 port 41004
+Oct  7 10:08:00 web01 sshd[2170]: Connection closed by authenticating user root 185.220.101.4 port 41010 [preauth]
+Oct  7 10:09:00 web01 CRON[2200]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)

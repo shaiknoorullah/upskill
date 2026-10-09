@@ -1,0 +1,12 @@
+NAMESPACE     NAME                               READY   STATUS             RESTARTS        AGE
+default       shop-api-7d9f8b6c5-x2k4p           1/1     Running            0               3d
+default       shop-api-7d9f8b6c5-q8m1z           1/1     Running            14 (2h ago)     3d
+default       shop-worker-5c6d7e8f9-abcde        0/1     CrashLoopBackOff   37 (45s ago)    1d
+payments      gateway-6b7c8d9e0-zz9yx            0/1     ImagePullBackOff   0               20m
+payments      gateway-6b7c8d9e0-yy8xw            1/1     Running            2 (5h ago)      2d
+monitoring    prometheus-0                       2/2     Running            9 (1d ago)      9d
+monitoring    node-exporter-fg7hj                1/1     Running            10 (3d ago)     30d
+batch         nightly-report-28812345-k9j8h      0/1     Completed          0               6h
+batch         nightly-report-28812346-m2n3b      0/1     Error              0               5m
+kube-system   coredns-5d78c9869d-abc12           0/1     Running            1 (10m ago)     12d
+kube-system   etcd-control-plane                 1/1     Running            0               40d

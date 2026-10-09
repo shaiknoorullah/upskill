@@ -1,0 +1,8 @@
+shop-api         10.0.1.10   prod
+shop-api-canary  10.0.1.11   prod
+shop-api-v2      10.0.1.12   staging
+legacy-shop-api  10.0.1.13   prod
+shop-apiserver   10.0.1.14   prod
+metrics          10.0.1.1    prod
+cache            10.0.141.5  prod
+shop-api         10.0.2.10   staging

@@ -1,0 +1,18 @@
+{"ts": "2026-10-07T18:00:00+05:30", "site": "work", "type": "attempt", "item": "regex/1", "cmd": "", "result": "gave-up", "why": "anchored with ^ and a [...] class; status is mid-line; full answer given", "prediction": "", "confidence": null, "hints": 3}
+{"ts": "2026-10-07T18:01:00+05:30", "site": "work", "type": "rate", "item": "regex/1", "rating": "again"}
+{"ts": "2026-10-09T10:00:00+05:30", "site": "work", "type": "attempt", "item": "regex/2", "cmd": "grep -E 'POST' logs/access.log | awk '{print $1}' | sort -u", "result": "fail", "why": "unanchored POST matched a URL", "prediction": "", "confidence": null, "hints": 0}
+{"ts": "2026-10-09T10:05:00+05:30", "site": "work", "type": "attempt", "item": "regex/2", "cmd": "grep -E ' \"POST' logs/access.log | awk '{print $1}' | sort -u", "result": "pass", "why": "left context added; right side still open", "prediction": "", "confidence": null, "hints": 0}
+{"ts": "2026-10-09T10:06:00+05:30", "site": "work", "type": "rate", "item": "regex/2", "rating": "hard"}
+{"ts": "2026-10-09T10:20:00+05:30", "site": "work", "type": "attempt", "item": "regex/3", "cmd": "", "result": "pass", "why": "case-sensitive Invalid ok; output-fitted grep (4|3|2) and [a-z]+ drops names", "prediction": "", "confidence": null, "hints": 0}
+{"ts": "2026-10-09T10:21:00+05:30", "site": "work", "type": "rate", "item": "regex/3", "rating": "hard"}
+{"ts": "2026-10-09T11:00:00+05:30", "site": "work", "type": "attempt", "item": "regex/4", "cmd": "grep -rnwE 'TODO|FIXME|HACK' src/", "result": "pass", "why": "solved after the concept lesson", "prediction": "", "confidence": null, "hints": 1}
+{"ts": "2026-10-09T11:01:00+05:30", "site": "work", "type": "rate", "item": "regex/4", "rating": "good"}
+{"ts": "2026-10-09T12:00:00+05:30", "site": "work", "type": "attempt", "item": "regex/4a", "cmd": "grep -c '\\busers\\b' drills/queries.sql", "result": "pass", "why": "regex right; output format (-n vs -c) wrong twice", "prediction": "", "confidence": null, "hints": 0}
+{"ts": "2026-10-09T12:01:00+05:30", "site": "work", "type": "rate", "item": "regex/4a", "rating": "good"}
+{"ts": "2026-10-09T13:00:00+05:30", "site": "work", "type": "attempt", "item": "regex/4b", "cmd": "grep -w 'shop-api'", "result": "fail", "why": "- is a non-word char so a boundary exists", "prediction": "", "confidence": null, "hints": 0}
+{"ts": "2026-10-09T13:05:00+05:30", "site": "work", "type": "attempt", "item": "regex/4b", "cmd": "grep '^shop-api'", "result": "fail", "why": "^ anchors the start only", "prediction": "", "confidence": null, "hints": 0}
+{"ts": "2026-10-09T13:10:00+05:30", "site": "work", "type": "attempt", "item": "regex/4b", "cmd": "grep -w '^shop-api[^\\-]'", "result": "partial", "why": "works; consuming class fails at end of line", "prediction": "", "confidence": null, "hints": 0}
+{"ts": "2026-10-09T13:20:00+05:30", "site": "work", "type": "attempt", "item": "regex/4b", "cmd": "grep -P '(?<![\\w-])shop-api(?![\\w-])'", "result": "pass", "why": "self-discovered lookarounds, and -P after the -E error", "prediction": "", "confidence": null, "hints": 0}
+{"ts": "2026-10-09T13:21:00+05:30", "site": "work", "type": "rate", "item": "regex/4b", "rating": "hard"}
+{"ts": "2026-10-09T13:22:00+05:30", "site": "work", "type": "ledger", "concept": "word-boundaries", "level": "practised", "evidence": ""}
+{"ts": "2026-10-09T13:22:00+05:30", "site": "work", "type": "ledger", "concept": "context-anchoring", "level": "practised", "evidence": ""}

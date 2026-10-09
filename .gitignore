@@ -1,2 +1,6 @@
 .tutor-pane
 progress/.faults/
+
+# local-only: work-derived data, research notes, runtime state (repo is public)
+local/
+__pycache__/

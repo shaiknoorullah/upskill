@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: tls-cert
+stringData:
+  tls.key: |
+    -----BEGIN RSA PRIVATE KEY-----
+    MIIEowIBAAKCAQEAfakefakefakefakefake
+    -----END RSA PRIVATE KEY-----
+  note: "rotate after -----BEGIN PUBLIC KEY----- migration"
+  empty:

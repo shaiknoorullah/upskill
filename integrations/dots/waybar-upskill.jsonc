@@ -1,0 +1,15 @@
+// chezmoi target: merge into ~/.config/waybar/config(.jsonc) and add
+// "custom/upskill" to one of the modules-left/center/right arrays.
+// The daemon writes ~/.cache/upskill/status (plain text) and status.json
+// (same text plus a CSS class: ready, busy, snoozed, done, unknown, idle).
+// For plain text without classes use
+//   "exec": "cat ~/.cache/upskill/status 2>/dev/null"   and drop "return-type".
+{
+  "custom/upskill": {
+    "exec": "cat ~/.cache/upskill/status.json 2>/dev/null || echo '{\"text\":\"upskill off\",\"class\":\"off\"}'",
+    "return-type": "json",
+    "interval": 30,
+    "on-click": "python3 ~/upskill/drift/nudged.py --start",
+    "tooltip": false
+  }
+}

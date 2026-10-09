@@ -1,0 +1,10 @@
+2026-10-09 10:00:01 WARN  disk usage 81%
+2026-10-09 10:00:02 WARNING deprecated flag --old-mode
+2026-10-09 10:00:03 INFO  no WARN thresholds configured
+2026-10-09 10:00:04 ERROR failed to connect: ERRORS=3
+2026-10-09 10:00:05 warn  lowercase from legacy lib
+2026-10-09 10:00:06 INFO  user error_count=0
+2026-10-09 10:00:07 ERROR timeout
+2026-10-09 10:00:08 FATAL panic: nil map
+2026-10-09 10:00:09 Error mixed case from plugin
+2026-10-09 10:00:10 ERRORS batch summary

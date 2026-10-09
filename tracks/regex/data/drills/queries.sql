@@ -1,0 +1,12 @@
+SELECT * FROM users WHERE id = 1;
+select name from orders;
+SELECT id, email FROM users_archive;
+DELETE FROM sessions WHERE expires_at < now();
+delete from users;
+UPDATE users SET active = false;
+UPDATE orders SET status = 'shipped' WHERE id = 42;
+-- DELETE FROM users;
+INSERT INTO audit_log (action) VALUES ('DELETE FROM users');
+SELECT * FROM user_roles;
+  update Orders set total = 0;
+SELECT * FROM users JOIN user_roles ON users.id = user_roles.user_id;

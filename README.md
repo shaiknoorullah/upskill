@@ -25,6 +25,15 @@ Study headquarters for Claude Code. It carries everything from the claude.ai pla
 - `/checkpoint 1|2|3`: milestone exam
 - `/wrap`: end of session: log, ledger, misses, next action
 
+## Micro-sessions: `/pause` (5-minute fillers, home or work)
+- `/pause` runs one hands-on session: it resumes where you left off, starts with a due re-challenge, then poses a new challenge. You predict, run it yourself and struggle, then get a full debrief of every attempt.
+- `./up status` prints a one-liner such as `upskill · 1 due · 1d streak · 2/7 wk · ▶ regex/1`. Also `./up next`, `./up map`, `./up due`.
+- Tracks are in `tracks/`: `regex` (28 checked exercises), `lfcs` (safe local micro-challenges), and `interview` (your 68 misses as spaced re-challenges).
+- Progress is the append-only `state/events.jsonl`, merged by union, so home and work both push without conflicts. Spaced review uses FSRS (`tutor/fsrs.py`).
+- Skills: `pause`, `debrief`, `forge` (drill sets), `draw` (Excalidraw, a live canvas via `integrations/excalidraw/`), `coach` (retro, roadmap).
+- At work: `echo work > local/site`. That turns on companion mode: local data and labs only, never org infra, and work-derived data stays in the gitignored `local/`.
+- The drift nudger (`drift/`) offers a session when Claude is busy and you've wandered off. Desktop snippets for the dots repo are in `integrations/dots/`.
+
 ## Voice
 Type `/voice` once, then hold Space and talk. The PC needs a microphone (a headset or webcam mic works). Transcription doesn't count toward your usage limits.
 

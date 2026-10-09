@@ -1,0 +1,11 @@
+id,name,email,phone,signup_date,country
+1,Alice Khan,alice.khan@example.com,+1 (415) 555-0132,03/14/2025,US
+2,Bob Stone,bob@localhost,415.555.0199,12/01/2024,US
+3,Chen Wei,chen.wei+shop@mail.example.cn,+86 138 0013 8000,07/04/2025,CN
+4,Dana Ruiz,dana..ruiz@example.com,(212) 555-0101,1/5/2025,US
+5,Eve Adams,eve@example,555-0100,02/30/2025,US
+6,Farah Ali,farah_ali@sub.example.co.uk,+44 20 7946 0958,11/11/2023,GB
+7,Gus Lee,gus@@example.com,4155550144,13/01/2025,US
+8,Hana Sato,hana-sato@example.jp,+81 3-1234-5678,09/09/2025,JP
+9,Ivan Petrov,.ivan@example.ru,8 (495) 123-45-67,10/31/2024,RU
+10,Jo ONeil,jo.oneil@example.ie,+353 1 555 0199,2025-06-01,IE

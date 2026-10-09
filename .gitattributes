@@ -1,0 +1,2 @@
+# progress is an append-only log; home and work PCs both append, so merge by union
+state/*.jsonl merge=union

@@ -1,0 +1,20 @@
+/* chezmoi target: append to ~/.config/waybar/style.css */
+#custom-upskill {
+  padding: 0 8px;
+  opacity: 0.6;
+}
+#custom-upskill.ready {
+  opacity: 1;
+  color: #a6e3a1;
+}
+#custom-upskill.busy {
+  opacity: 0.8;
+}
+#custom-upskill.snoozed,
+#custom-upskill.done,
+#custom-upskill.off {
+  opacity: 0.4;
+}
+#custom-upskill.unknown {
+  color: #f9e2af;
+}

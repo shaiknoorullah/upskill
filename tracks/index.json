@@ -1,0 +1,4 @@
+{
+ "order": ["regex", "lfcs", "interview"],
+ "note": "LFCS first (decided 2026-10-09), then CKA -> CNPE -> CKS. regex feeds LFCS Essential Commands."
+}
